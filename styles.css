@@ -2,13 +2,71 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+p, div {
+    margin: 0;
+    padding: 0;
 }
 
 svg {
     height: 24px;
     fill: black;
+}
+
+.portrait-ph {
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+}
+
+.project-ph {
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+}
+
+.contact {
+    margin-top: auto;
+    background-color: #0891B2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.contact svg {
+    fill: white;
+}
+
+.contact-left {
+    width: 35ch;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0.7rem;
+}
+
+.phone, .email {
+    display: flex;
+    align-items: center;
+}
+
+.contact-right {
+    background-color: aqua;
+    height: 90%;
+    width: 50ch;
+    align-self: center;
 }
