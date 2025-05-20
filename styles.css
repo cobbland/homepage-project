@@ -7,6 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,6 +36,34 @@ svg {
     background-color: aqua;
     height: 50px;
     width: 50px;
+}
+
+.bg {
+    background-color: #0891B2;
+    height: 150px;
+    width: 125%;
+    top: -70px;
+    left: -25px;
+    transform: rotate(-5deg);
+    position: absolute;
+    z-index: -1;
+}
+
+.work, .top {
+    max-width: 800px;
+}
+
+.about {
+    background-color: white;
+}
+
+.card {
+    background-color: white;
+    width: 200px;
+}
+
+.about, .card, .portrait-ph, .bg {
+    box-shadow: 2px 2px 4px #00000044;
 }
 
 .contact {
