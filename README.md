@@ -1,2 +1,3 @@
-# homepage-project
-An The Odin Project project
+# Homepage Project
+
+An The Odin Project project.
