@@ -27,39 +27,60 @@ svg {
 }
 
 .portrait-ph {
-    background-color: aqua;
-    height: 50px;
-    width: 50px;
+    height: 320px;
+    width: 300px;
+    object-fit: cover;
 }
 
 .project-ph {
     background-color: aqua;
-    height: 50px;
-    width: 50px;
+    height: 175px;
+    width: 100%;
+    text-align: center;
 }
 
 .bg {
     background-color: #0891B2;
-    height: 150px;
-    width: 125%;
-    top: -70px;
-    left: -25px;
-    transform: rotate(-5deg);
+    height: 450px;
+    width: 130%;
+    top: -200px;
+    left: -150px;
+    transform: rotate(-15deg);
     position: absolute;
     z-index: -1;
 }
 
 .work, .top {
-    max-width: 800px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    position: relative;
+}
+
+header {
+    position: relative;
+}
+
+header h1 {
+    color: white;
+    letter-spacing: 0.28em;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 }
 
 .about {
     background-color: white;
+    max-width: 40ch;
+    position: absolute;
+    top: 50px;
+    left: 300px;
 }
 
 .card {
     background-color: white;
-    width: 200px;
+    width: 250px;
 }
 
 .about, .card, .portrait-ph, .bg {
@@ -94,8 +115,14 @@ svg {
 }
 
 .contact-right {
-    background-color: aqua;
     height: 90%;
     width: 50ch;
     align-self: center;
+    overflow: hidden;
+}
+
+.working-ph {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
