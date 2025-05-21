@@ -4,10 +4,10 @@ body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,21 +30,22 @@ svg {
     height: 320px;
     width: 300px;
     object-fit: cover;
+    position: relative;
 }
 
-.project-ph {
-    background-color: aqua;
-    height: 175px;
+.bg-container {
     width: 100%;
-    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
 }
 
 .bg {
     background-color: #0891B2;
-    height: 450px;
-    width: 130%;
-    top: -200px;
-    left: -150px;
+    height: 800px;
+    width: 150%;
+    top: -400px;
+    left: -400px;
     transform: rotate(-15deg);
     position: absolute;
     z-index: -1;
@@ -60,27 +61,91 @@ svg {
 
 header {
     position: relative;
+    z-index: 2;
 }
 
 header h1 {
     color: white;
-    letter-spacing: 0.28em;
     position: absolute;
     bottom: 10px;
     left: 10px;
+    z-index: 3;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #00000044;
 }
 
 .about {
     background-color: white;
-    max-width: 40ch;
+    width: 470px;
     position: absolute;
     top: 50px;
     left: 300px;
+    z-index: 1;
+    padding: 1rem 1rem 1rem 2.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.about .social {
+    margin-left: auto;
+}
+
+.social {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.work h2 {
+    color: white;
+}
+
+.cards {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card {
     background-color: white;
     width: 250px;
+    height: 320px;
+    margin-bottom: 2rem;
+}
+
+.project-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1rem;
+}
+
+.project-ph {
+    height: 175px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-ph p {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 3rem;
+    color: white;
 }
 
 .about, .card, .portrait-ph, .bg {
@@ -88,13 +153,15 @@ header h1 {
 }
 
 .contact {
-    margin-top: auto;
+    margin: auto 0 0 0;
+    padding: 1rem 0;
     background-color: #0891B2;
     color: white;
     display: flex;
     justify-content: center;
-    width: 100%;
     flex-wrap: wrap;
+    gap: 1rem;
+    outline: black;
 }
 
 .contact svg {
@@ -112,6 +179,7 @@ header h1 {
 .phone, .email {
     display: flex;
     align-items: center;
+    gap: 0.2rem;
 }
 
 .contact-right {
@@ -123,6 +191,6 @@ header h1 {
 
 .working-ph {
     width: 100%;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
 }
