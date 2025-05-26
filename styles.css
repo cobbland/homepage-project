@@ -2,12 +2,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    /* display: flex;
-    flex-direction: column; */
-    /* height: 100vh; */
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,6 +26,12 @@ svg {
     fill: black;
 }
 
+.social svg:hover, 
+.project-links svg:hover,
+.email:hover {
+    cursor: pointer;
+}
+
 .portrait-ph {
     height: 320px;
     width: 300px;
@@ -39,21 +41,31 @@ svg {
 
 .bg-container {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     position: absolute;
 }
 
 .bg {
     background-color: #0891B2;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-15deg);
+    height: 100vh;
+    width: 200vw;
+    top: -85vh;
+    left: -40vw;
+}
+
+/* .bg {
+    background-color: #0891B2;
+    position: absolute;
+    transform: rotate(-15deg);
     height: 800px;
     width: 4000px;
     top: -700px;
     left: -400px;
-    transform: rotate(-15deg);
-    position: absolute;
-    z-index: -1;
-}
+} */
 
 .work, .top {
     max-width: 800px;
@@ -67,6 +79,7 @@ header {
     position: relative;
     z-index: 2;
     margin-top: 1rem;
+    width: max-content;
 }
 
 header h1 {
@@ -115,6 +128,11 @@ header h1 {
     background-color: white;
     height: 320px;
     flex: 1 1 250px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .project-top {
@@ -198,6 +216,7 @@ header h1 {
 
     header {
         margin-top: 0;
+        width: 100%;
     }
 
     header h1 {
